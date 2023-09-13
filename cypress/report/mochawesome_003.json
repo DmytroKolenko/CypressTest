@@ -1,0 +1,115 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2023-07-18T09:30:35.522Z",
+    "end": "2023-07-18T09:30:38.462Z",
+    "duration": 2940,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "9ca7b5ec-b1f6-48b9-8de4-e1c02c5ba78c",
+      "title": "",
+      "fullFile": "cypress\\e2e\\spec.cy.js",
+      "file": "cypress\\e2e\\spec.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "91cbeb7b-991c-4de9-ad53-95e44356fdeb",
+          "title": "template spec",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "passes",
+              "fullTitle": "template spec passes",
+              "timedOut": null,
+              "duration": 2680,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('http://tyty.com/');",
+              "err": {
+                "message": "CypressError: `cy.visit()` failed trying to load:\n\nhttp://tyty.com/\n\nWe attempted to make an http request to this URL but the request failed without a response.\n\nWe received this error at the network level:\n\n  > Error: getaddrinfo ENOTFOUND tyty.com\n\nCommon situations why this would fail:\n  - you don't have internet access\n  - you forgot to run / boot your web server\n  - your web server isn't accessible\n  - you have weird network configuration settings on your computer",
+                "estack": "CypressError: `cy.visit()` failed trying to load:\n\nhttp://tyty.com/\n\nWe attempted to make an http request to this URL but the request failed without a response.\n\nWe received this error at the network level:\n\n  > Error: getaddrinfo ENOTFOUND tyty.com\n\nCommon situations why this would fail:\n  - you don't have internet access\n  - you forgot to run / boot your web server\n  - your web server isn't accessible\n  - you have weird network configuration settings on your computer\n    at <unknown> (http://localhost:63330/__cypress/runner/cypress_runner.js:147859:82)\n    at visitFailedByErr (http://localhost:63330/__cypress/runner/cypress_runner.js:147251:12)\n    at <unknown> (http://localhost:63330/__cypress/runner/cypress_runner.js:147858:11)\n    at tryCatcher (http://localhost:63330/__cypress/runner/cypress_runner.js:18744:23)\n    at Promise._settlePromiseFromHandler (http://localhost:63330/__cypress/runner/cypress_runner.js:16679:31)\n    at Promise._settlePromise (http://localhost:63330/__cypress/runner/cypress_runner.js:16736:18)\n    at Promise._settlePromise0 (http://localhost:63330/__cypress/runner/cypress_runner.js:16781:10)\n    at Promise._settlePromises (http://localhost:63330/__cypress/runner/cypress_runner.js:16857:18)\n    at _drainQueueStep (http://localhost:63330/__cypress/runner/cypress_runner.js:13451:12)\n    at _drainQueue (http://localhost:63330/__cypress/runner/cypress_runner.js:13444:9)\n    at ../../node_modules/bluebird/js/release/async.js.Async._drainQueues (http://localhost:63330/__cypress/runner/cypress_runner.js:13460:5)\n    at Async.drainQueues (http://localhost:63330/__cypress/runner/cypress_runner.js:13330:14)\nFrom Your Spec Code:\n    at Context.eval (webpack:///./cypress/e2e/spec.cy.js:3:7)\n\nFrom Node.js Internals:\n  Error: getaddrinfo ENOTFOUND tyty.com\n      at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:71:26)",
+                "diff": null
+              },
+              "uuid": "ad98bac3-b986-469c-9c94-995a43003963",
+              "parentUUID": "91cbeb7b-991c-4de9-ad53-95e44356fdeb",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "ad98bac3-b986-469c-9c94-995a43003963"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 2680,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "charts": true,
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress/report",
+        "e2e": {
+          "watchForFileChanges": true,
+          "defaultCommandTimeout": 7000,
+          "setupNodeEvents": "[Function setupNodeEvents]"
+        }
+      },
+      "version": "6.2.0"
+    }
+  }
+}
